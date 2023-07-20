@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/voice": "^0.16.0",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.3.1",
+    "ffmpeg-static": "^5.1.0",
+    "libsodium-wrappers": "^0.7.11",
+    "module-alias": "^2.2.3",
+    "moment": "^2.29.4",
+    "reconlx": "^2.5.6",
+    "scdl-core": "^1.1.0",
+    "ytdl-core": "^4.11.5",
+    "ytpl": "^2.3.0",
+    "ytsr": "^3.8.2"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "rm -rf dist && tsc",
+    "start": "node dist/index.js"
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
