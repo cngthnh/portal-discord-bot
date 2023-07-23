@@ -8,7 +8,7 @@ export const createPlayMessage = (payload: {
     url: string;
     author: string;
     thumbnail: string;
-    type: 'Song' | 'Playlist';
+    type: string;
     length: number;
     platform: Platform;
     requester: string;

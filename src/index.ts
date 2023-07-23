@@ -1,5 +1,6 @@
 import { config } from "dotenv";
 import { play } from "@/actions/play";
+import { stream } from "@/actions/stream";
 config();
 
 import { Client, GatewayIntentBits } from "discord.js";
@@ -27,6 +28,8 @@ client.on("messageCreate", (message) => {
         switch (args[0]) {
             case play.name:
                 play.execute(message, content);
+            case stream.name: 
+                stream.execute(message, content);
         }
     }
 });
