@@ -8,7 +8,7 @@
     "libsodium-wrappers": "^0.7.11",
     "module-alias": "^2.2.3",
     "moment": "^2.29.4",
-    "node-fetch": "^3.3.2",
+    "node-fetch": "^2.6.12",
     "reconlx": "^2.5.6",
     "scdl-core": "^1.1.0",
     "ytdl-core": "^4.11.5",
@@ -25,6 +25,7 @@
     "@": "dist"
   },
   "devDependencies": {
+    "@types/node-fetch": "^2.6.4",
     "nodemon": "^3.0.1",
     "tsc-alias": "^1.8.7",
     "tsconfig-paths": "^4.2.0",
