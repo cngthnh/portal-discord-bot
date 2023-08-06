@@ -2,6 +2,7 @@ import messages from '@/constants/messages';
 import { QueueItem, Server, servers } from '@/models/server';
 import { YoutubeService } from '@/services/youtube';
 import { Platform } from '@/types/Song';
+import fetch from 'node-fetch';
 import {
     entersState,
     joinVoiceChannel,
@@ -78,7 +79,7 @@ export const stream = {
                     body: JSON.stringify(metadata)
                 })
                     .then(response => response.json())
-                    .then(response => {
+                    .then((response: any) => {
                         message.channel.send({
                             embeds: [
                                 createPlayMessage({ ...metadata, url: configs.PORTAL_STREAM_DASHBOARD + '?session=' + response.token }),
